@@ -1,0 +1,78 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #bebbd8;
+}
+
+.NavigationControls {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  margin: 20px 0; 
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  font-size: xxx-large;
+  padding: 1%;
+  margin: 0%;
+  transition: 0.5s;
+  background: rgba(140, 138, 160, 0);
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgba(140, 138, 160, 0.6);
+  box-shadow: 0 0 10px 10px rgba(140, 138, 160, 0.6);
+  transition: 0.5s;
+}
+
+button:disabled {
+  color: gray;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: rgba(140, 138, 160, 0);
+  color: gray;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.Card {
+  background: #777777;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.Card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card-logo {
+  height: 80px;
+}
+
+.Card-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.Card-link:hover {
+  text-decoration: underline;
+}
+
